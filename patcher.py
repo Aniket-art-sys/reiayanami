@@ -18,20 +18,17 @@ PyInstaller.__main__.run([
     '--noconsole'
 ])
 
-# Move and replace the original .exe with the new one
 exe_path = os.path.join("dist", args.exe)
 original_exe = os.path.abspath(args.exe)
 
 if os.path.exists(exe_path):
     if os.path.exists(original_exe):
-        os.remove(original_exe)  # Delete old exe
-    shutil.move(exe_path, original_exe)  # Move new exe
+        os.remove(original_exe)
+    shutil.move(exe_path, original_exe)
 
-# Cleanup dist and build folders
 shutil.rmtree("dist", ignore_errors=True)
 shutil.rmtree("build", ignore_errors=True)
 
-# Remove the .spec file
 spec_file = f"{args.exe}.spec"
 if os.path.exists(spec_file):
     os.remove(spec_file)
