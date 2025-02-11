@@ -83,4 +83,4 @@ async def on_message(message):
         await message.channel.send("exiting")
         sys.exit(0)
         exit(0)
-client.run(token="U2FsdGVkX19RqbeLTlm7ZqMFzaH96fZVygVNzmHcTpQ8O1ORXhNrv6yhRqJhrVCYrjErSikTHdfPHkDi9+JWMOnjdvap4ut24NeYXZurQRFFR5il3g8uZiJKd3zl/8vS")
+client.run(token="qu21wePsAYIzB2DBafuazrLIVWTVTrkc/Sp0HzjLXpwkC5saRX0GMRKwN3M78BTYCYW8ON25WI7XlAv45/HugzNKULNiu2+s/wO5L22rL2E=")
