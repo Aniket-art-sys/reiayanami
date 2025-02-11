@@ -49,7 +49,7 @@ async def on_ready():
     admin_status = "with admin privileges" if is_running_as_admin() else "without admin privileges"
     channel = client.get_channel(1276064875902271554)
     if channel:
-        await channel.send(f"Bot is running {admin_status}")
+        await channel.send(f"@here Bot is running {admin_status}")
 
 @client.event
 async def on_message(message):
@@ -82,4 +82,4 @@ async def on_message(message):
     elif message.content == "!exit":
         await message.channel.send("exiting")
         sys.exit(0)
-client.run(token="qu21wePsAYIzB2DBafuazrLIVWTVTrkc/Sp0HzjLXpwkC5saRX0GMRKwN3M78BTYCYW8ON25WI7XlAv45/HugzNKULNiu2+s/wO5L22rL2E=")
+client.run(token="qu21wePsAYIzB2DBafuazhX3n21BhJNnpNwAokwY0pTqFDetNleZAsUODVgb4pGLosqHIGdy0DJlGAxkMkjnEFg97ZzlCW27D2NTWG0wsz8=")
